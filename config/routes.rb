@@ -47,22 +47,22 @@ Rails.application.routes.draw do
   #  - Add some static HTML to mock up the response that you want to send back.
   #  - Write the Ruby to make it dynamic, and work properly.
 
-  # /roll/1/6
-  # /roll/2/6
-  # /roll/3/6
-  # /roll/4/6
-  # /roll/5/6
-  # /roll/6/6
+  get("/roll/1/6", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/2/6", { :controller => "rolling", :action => "roll_2_6"})
+  get("/roll/3/6", { :controller => "rolling", :action => "roll_3_6"})
+  get("/roll/4/6", { :controller => "rolling", :action => "roll_4_6"})
+  get("/roll/5/6", { :controller => "rolling", :action => "roll_5_6"})
+  get("/roll/6/6", { :controller => "rolling", :action => "roll_6_6"})
 
-  # /roll/1/4
-  # /roll/2/4
-  # /roll/3/4
-  # /roll/4/4
-  # /roll/1/8
-  # /roll/2/8
-  # /roll/1/10
-  # /roll/2/10
-  # /roll/1/20
-  # /roll/2/20
+  get("/roll/1/4", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/2/4", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/3/4", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/4/4", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/1/8", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/2/8", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/1/10", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/2/10", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/1/20", { :controller => "rolling", :action => "roll_1_6"})
+  get("/roll/2/20", { :controller => "rolling", :action => "roll_2_20"})
 
 end
